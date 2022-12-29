@@ -1,0 +1,20 @@
+/* CodeBox CSS by FineshopDesign.com */
+.pre{background:#f6f6f6;color:#2f3337;direction: ltr;position:relative;border-radius:3px;overflow:hidden;margin:1.7em auto} 
+.pre pre{margin:0;color:inherit;background:inherit;display:block;position:relative;font-size:13px;line-height:1.6em;border-radius:3px;padding:30px 20px 20px;-moz-tab-size:2;tab-size:2;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none; overflow:auto;direction:ltr;white-space:pre} 
+.pre.adv{border-radius:10px}
+.pre.adv::before{display:none}
+.pre:not(.str) .prCd{display:none}
+.pre.str .prTl{display:none;}
+.pre.adv pre{padding-top:60px}
+.preM{position:absolute;top:0;right:0;left:0;width:100%;background: rgba(0,0,0,.04);padding:10px 10px 10px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:nowrap;z-index:2}
+.preT{font-size:12px;font-family: var(--fontC);line-height:1rem;position:relative;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;padding-right:10px;}
+.preA{display:flex;gap:8px;white-space:nowrap;}
+.preA button{outline:none;border:none;width:30px;height:30px;background:#d9d9d9;padding:0;margin:0;border-radius:50%;transition:border-radius .2s ease;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;}
+.preA button:hover{border-radius:40%;}
+.preA button >svg{width:18px;height:18px;stroke:none;fill:#2e2e2e;transition: all .5s ease;}
+.pre.cpd .prCp svg, .pre.pnd .prDl svg, .pre.dwn .prDl svg{animation: jiggle 1s}
+.pre.cpd .prCp svg .a,.pre:not(.cpd) .prCp svg .b{opacity:0}
+.pre.dwn .prDl svg .a, .pre.pnd .prDl svg .a,.pre:not(.pnd) .prDl svg .b,.pre:not(.dwn) .prDl svg .c{opacity:0}
+@keyframes jiggle{0%{transform:rotate(0)}20%{transform:rotate(26deg)}40%{transform:rotate(-26deg)}60%{transform:rotate(26deg)}80%{transform:rotate(-26deg)}100%{transform:rotate(0)}}
+@-webkit-keyframes jiggle{0%{transform:rotate(0)}20%{transform:rotate(26deg)}40%{transform:rotate(-26deg)}60%{transform:rotate(26deg)}80%{transform:rotate(-26deg)}100%{transform:rotate(0)}}
+  
